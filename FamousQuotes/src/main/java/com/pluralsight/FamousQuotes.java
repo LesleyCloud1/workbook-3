@@ -36,7 +36,7 @@ public class FamousQuotes {
             // Step 4: If user types 'r' → show random quote
             if (input.equalsIgnoreCase("r")) {
                 int randomIndex = random.nextInt(quotes.length); // Pick a number between 0 and 9
-                System.out.println("\n📜 Random Quote:");
+                System.out.println("\n Random Quote:");
                 System.out.println(quotes[randomIndex]);
             }
             // Step 5: Else, try to convert input to a number and show quote
@@ -46,18 +46,18 @@ public class FamousQuotes {
 
                     // Check if the number is within valid range (1–10)
                     if (choice >= 1 && choice <= 10) {
-                        System.out.println("\n📜 Selected Quote:");
+                        System.out.println("\n Selected Quote:");
                         System.out.println(quotes[choice - 1]); // Subtract 1 for array index (starts at 0)
                     } else {
-                        System.out.println("⚠️ That number is out of range. Please choose 1 to 10.");
+                        System.out.println("That number is out of range. Please choose 1 to 10.");
                     }
 
                 } catch (NumberFormatException e) {
                     // If user typed something that can't be a number (like "hello")
-                    System.out.println("❌ Invalid input! Please enter a number between 1–10 or 'r' for random.");
+                    System.out.println("Invalid input! Please enter a number between 1–10 or 'r' for random.");
                 } catch (Exception e) {
                     // Catch any other unexpected errors
-                    System.out.println("❌ Something went wrong: " + e.getMessage());
+                    System.out.println("Something wen bt wrong: " + e.getMessage());
                 }
             }
 
