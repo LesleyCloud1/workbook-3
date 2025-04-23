@@ -1,11 +1,11 @@
 package com.pluralsight;
 
-import java.io.InputStream;
-import java.util.Scanner;
+import java.io.InputStream; //Import java file
+import java.util.Scanner; //Read user input
 
 public class BedtimeStories {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);//Created scanner
 
         // Show story choices
         System.out.println("Choose a bedtime story:");
@@ -41,7 +41,9 @@ public class BedtimeStories {
         while (fileScanner.hasNextLine()) {
             System.out.println(lineNumber + ". " + fileScanner.nextLine());
             lineNumber++;
+
         }
+        System.out.println("Sweet Dreams! 🌃🌛");
 
         fileScanner.close();
     }
