@@ -22,14 +22,14 @@ public class BedtimeStories {
         else if (choice == 2) fileName = "hansel_and_gretel.txt";
         else if (choice == 3) fileName = "mary_had_a_little_lamb.txt";
         else {
-            System.out.println("❌ Invalid selection.");
+            System.out.println("Invalid selection.");
             return;
         }
 
         // Load file from resources folder
         InputStream inputStream = BedtimeStories.class.getClassLoader().getResourceAsStream(fileName);
         if (inputStream == null) {
-            System.out.println("❌ Could not find the file: " + fileName);
+            System.out.println(" Could not find the file: " + fileName);
             return;
         }
 
@@ -37,7 +37,7 @@ public class BedtimeStories {
         Scanner fileScanner = new Scanner(inputStream);
         int lineNumber = 1;
 
-        System.out.println("\n📖 Your story begins:\n");
+        System.out.println("\n Your story begins:\n");
         while (fileScanner.hasNextLine()) {
             System.out.println(lineNumber + ". " + fileScanner.nextLine());
             lineNumber++;
