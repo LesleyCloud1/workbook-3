@@ -6,7 +6,7 @@ public class Employee { //Class represents one employee in our payroll system
     private double hoursWorked;
     private double payRate;
 
-    //Constructor, creates a new Employee object with given details.
+    //Creates a new Employee object with given details.
     public Employee(int employeeId, String name, double hoursWorked, double payRate) {
         this.employeeId = employeeId;
         this.name = name;
