@@ -27,7 +27,8 @@ public class PayrollCalculator {
 
         //Ask for output file name
         System.out.println("\nChoose a payroll output file:");
-        System.out.println("1. payroll-sept-2023.csv");
+        System.out.println("1." +
+                " payroll-sept-2023.csv");
         System.out.print("Enter your only choice (1): ");
         int outputChoice = scanner.nextInt();
         scanner.nextLine();
@@ -52,7 +53,7 @@ public class PayrollCalculator {
 
             //Write new header to new output file
             writer.write("Id|Name|Gross Pay");
-            writer.newLine();
+            //writer.newLine();
 
             // Read and process each line of employee data
             while ((line = reader.readLine()) != null) {
